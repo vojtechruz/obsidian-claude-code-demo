@@ -1,0 +1,41 @@
+/* ---------------------------------------------------------------
+   TaskNotes: sirsi vstup pro user fields (Custom Fields) v task modalu
+
+   Plugin renderuje textovy user field jako Setting.addText, tj. uzky
+   input vpravo od popisku. Contexts/Tags maji vlastni "wide" layout
+   (.tn-task-modal__wide-text-setting), user fields ne — tohle jim ho
+   doda a jde jeste dal: popisek nad input, input na celou sirku.
+
+   Cili skupina "Custom Fields" = posledni .task-modal__field-group
+   (order 4 v modalFieldsConfig.groups).
+   --------------------------------------------------------------- */
+
+.tasknotes-plugin .details-container .task-modal__field-group:last-child .setting-item {
+  display: block;
+  padding: var(--size-4-2) 0;
+}
+
+.tasknotes-plugin .details-container .task-modal__field-group:last-child .setting-item-info {
+  margin-bottom: var(--size-4-1);
+}
+
+.tasknotes-plugin .details-container .task-modal__field-group:last-child .setting-item-control {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.tasknotes-plugin .details-container .task-modal__field-group:last-child .setting-item-control input[type='text'] {
+  width: 100%;
+  min-height: 2.4em;
+  line-height: 1.4;
+}
+
+/* Fallback pro layout bez modalFieldsConfig (kontejner s vlastni tridou) */
+.tasknotes-plugin .tn-task-modal__user-fields .setting-item {
+  display: block;
+}
+
+.tasknotes-plugin .tn-task-modal__user-fields .setting-item-control,
+.tasknotes-plugin .tn-task-modal__user-fields .setting-item-control input[type='text'] {
+  width: 100%;
+}

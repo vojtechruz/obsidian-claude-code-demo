@@ -1,0 +1,47 @@
+properties:
+  oblast:
+    displayName: Oblast
+  start_date:
+    displayName: Start
+  due_date:
+    displayName: Due
+  status:
+    displayName: Status
+views:
+  - type: table
+    name: Tasks
+    filters:
+      and:
+        - file.hasTag("task")
+        - projects.contains(link("Prednaska Czech Java Days"))
+    order:
+      - status
+      - due
+      - file.name
+    sort:
+      - property: status
+        direction: ASC
+    columns:
+      - file.name
+      - status
+      - due
+      - priority
+  - type: table
+    name: Notes
+    filters:
+      and:
+        - file.ext == "md"
+        - file.name != "Prednaska Czech Java Days"
+        - '!file.hasTag("task")'
+        - or:
+            - file.inFolder("Archiv/Projekty/Prednaska Czech Java Days")
+            - projects.contains(link("Prednaska Czech Java Days"))
+    order:
+      - file.mtime
+      - file.name
+    sort:
+      - property: file.mtime
+        direction: DESC
+    columns:
+      - file.name
+      - file.mtime

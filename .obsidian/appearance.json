@@ -1,0 +1,10 @@
+{
+  "cssTheme": "AnuPpuccin",
+  "enabledCssSnippets": [
+    "wide-notes",
+    "tasknotes-user-fields",
+    "bold-links"
+  ],
+  "baseFontSizeAction": true,
+  "baseFontSize": 15
+}

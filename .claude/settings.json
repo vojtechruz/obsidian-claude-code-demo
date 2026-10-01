@@ -1,0 +1,12 @@
+{
+  "enableAllProjectMcpServers": true,
+  "permissions": {
+    "allow": [
+      "Bash(python *)",
+      "Bash(python3 *)",
+      "PowerShell(python *)",
+      "PowerShell(python3 *)",
+      "mcp__demo-calendar"
+    ]
+  }
+}

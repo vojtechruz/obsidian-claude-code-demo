@@ -1,0 +1,27 @@
+/* ------------------------------------------------------------------
+   Wide notes — pro poznámky s tabulkami (Bases embedy)
+
+   Použití: do frontmatteru poznámky přidej
+       cssclasses:
+         - wide
+
+   Vyžaduje zapnuté "Readable line length" v Settings → Editor
+   (tahle třída jen přepíše jeho šířku pro danou poznámku).
+   ------------------------------------------------------------------ */
+
+.wide {
+  --file-line-width: 100%;
+}
+
+/* Pojistka, kdyby téma (AnuPpuccin) přepisovalo šířku vlastními selektory */
+.wide .markdown-preview-sizer,
+.wide .markdown-source-view.is-readable-line-width .cm-sizer,
+.wide .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+  max-width: 100%;
+}
+
+/* Tabulky Bases ať využijí celou šířku a dlouhé texty se zalomí */
+.wide .bases-table-container,
+.wide .bases-tbody {
+  width: 100%;
+}

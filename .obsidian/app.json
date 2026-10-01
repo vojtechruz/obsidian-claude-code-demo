@@ -1,0 +1,12 @@
+{
+  "attachmentFolderPath": "./Attachments",
+  "templatesFolderPath": "System/Templates",
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": true,
+  "trashOption": "local",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "__INBOX",
+  "userIgnoreFilters": [
+    "*.iml"
+  ]
+}

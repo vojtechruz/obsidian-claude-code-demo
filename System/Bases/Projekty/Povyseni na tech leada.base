@@ -1,0 +1,47 @@
+properties:
+  oblast:
+    displayName: Oblast
+  start_date:
+    displayName: Start
+  due_date:
+    displayName: Due
+  status:
+    displayName: Status
+views:
+  - type: table
+    name: Tasks
+    filters:
+      and:
+        - file.hasTag("task")
+        - projects.contains(link("Povyseni na tech leada"))
+    order:
+      - status
+      - due
+      - file.name
+    sort:
+      - property: status
+        direction: ASC
+    columns:
+      - file.name
+      - status
+      - due
+      - priority
+  - type: table
+    name: Notes
+    filters:
+      and:
+        - file.ext == "md"
+        - file.name != "Povyseni na tech leada"
+        - '!file.hasTag("task")'
+        - or:
+            - file.inFolder("Archiv/Projekty/Povyseni na tech leada")
+            - projects.contains(link("Povyseni na tech leada"))
+    order:
+      - file.mtime
+      - file.name
+    sort:
+      - property: file.mtime
+        direction: DESC
+    columns:
+      - file.name
+      - file.mtime

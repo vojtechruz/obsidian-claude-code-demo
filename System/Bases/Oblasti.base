@@ -1,0 +1,71 @@
+filters:
+  and:
+    - file.inFolder("Oblasti")
+    - file.ext == "md"
+properties:
+  start_date:
+    displayName: Start
+  due_date:
+    displayName: Due
+  status:
+    displayName: Status
+views:
+  - type: table
+    name: Oblasti
+    filters:
+      and:
+        - file.hasTag("Oblast")
+        - '!file.inFolder("System/Templates")'
+    order:
+      - status
+      - due_date
+      - file.name
+    sort:
+      - property: status
+        direction: ASC
+    columns:
+      - file.name
+      - status
+      - due_date
+      - start_date
+  - type: table
+    name: Aktivní
+    filters:
+      and:
+        - file.hasTag("Oblast")
+        - file.ext == "md"
+        - not:
+            - file.inFolder("System/Templates")
+        - or:
+            - status == "To Do"
+            - status == "In progress"
+            - status == "In Progress"
+            - status == "Waiting"
+            - status == "Active"
+    order:
+      - status
+      - due_date
+      - file.name
+    sort:
+      - property: status
+        direction: ASC
+    columns:
+      - file.name
+      - status
+      - due_date
+  - type: table
+    name: Archivované
+    filters:
+      and:
+        - file.inFolder("Archiv")
+        - or:
+            - status == "Done"
+            - status == "On Ice"
+            - status == "Someday"
+    order:
+      - due_date
+      - file.name
+    columns:
+      - file.name
+      - status
+      - due_date

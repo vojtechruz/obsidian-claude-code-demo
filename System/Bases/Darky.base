@@ -1,0 +1,104 @@
+properties:
+  rok:
+    displayName: Rok
+  osoba:
+    displayName: Osoba
+  prilezitost:
+    displayName: Příležitost
+  darek:
+    displayName: Dárek
+  typ:
+    displayName: Typ
+views:
+  - type: table
+    name: Dané
+    filters:
+      and:
+        - file.hasTag("darek")
+        - typ == "dano"
+    groupBy:
+      property: osoba
+      direction: ASC
+    order:
+      - file.name
+      - rok
+      - osoba
+      - prilezitost
+      - darek
+    sort:
+      - property: rok
+        direction: DESC
+  - type: table
+    name: Dostané
+    filters:
+      and:
+        - file.hasTag("darek")
+        - typ == "dostano"
+    groupBy:
+      property: osoba
+      direction: ASC
+    order:
+      - file.name
+      - rok
+      - osoba
+      - prilezitost
+      - darek
+    sort:
+      - property: rok
+        direction: DESC
+  - type: table
+    name: Dané osobě
+    filters:
+      and:
+        - file.hasTag("darek")
+        - typ == "dano"
+        - osoba.contains(this)
+    groupBy:
+      property: prilezitost
+      direction: ASC
+    order:
+      - file.name
+      - rok
+      - prilezitost
+      - darek
+    sort:
+      - property: rok
+        direction: DESC
+  - type: table
+    name: Dostané od osoby
+    filters:
+      and:
+        - file.hasTag("darek")
+        - typ == "dostano"
+        - osoba.contains(this)
+    groupBy:
+      property: prilezitost
+      direction: ASC
+    order:
+      - file.name
+      - rok
+      - prilezitost
+      - darek
+    sort:
+      - property: rok
+        direction: DESC
+    columnSize:
+      note.rok: 78
+  - type: table
+    name: Vše
+    filters:
+      and:
+        - file.hasTag("darek")
+    groupBy:
+      property: rok
+      direction: DESC
+    order:
+      - file.name
+      - rok
+      - typ
+      - osoba
+      - prilezitost
+      - darek
+    sort:
+      - property: rok
+        direction: DESC

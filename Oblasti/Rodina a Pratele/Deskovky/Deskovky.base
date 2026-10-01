@@ -1,0 +1,22 @@
+filters:
+  and:
+    - file.inFolder("Oblasti/Rodina a Pratele/Deskovky")
+    - file.ext == "md"
+views:
+  - type: table
+    name: Deskovky
+    order:
+      - file.name
+      - Hostility
+      - Players
+      - Playtime
+      - Language
+      - BGG Score
+    sort:
+      - property: BGG Score
+        direction: DESC
+  - type: cards
+    name: Galerie
+    order:
+      - file.name
+      - BGG Score

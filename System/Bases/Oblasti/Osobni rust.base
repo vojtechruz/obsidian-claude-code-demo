@@ -1,0 +1,59 @@
+properties:
+  start_date:
+    displayName: Start
+  due_date:
+    displayName: Due
+  status:
+    displayName: Status
+views:
+  - type: table
+    name: Projekty
+    filters:
+      and:
+        - file.hasTag("Projekt")
+        - oblast.contains(link("Oblasti/Osobni rust/Osobni rust"))
+    order:
+      - status
+      - due_date
+      - file.name
+    sort:
+      - property: status
+        direction: ASC
+    columns:
+      - file.name
+      - status
+      - due_date
+  - type: table
+    name: Tasks
+    filters:
+      and:
+        - file.hasTag("task")
+        - oblast.contains(link("Oblasti/Osobni rust/Osobni rust"))
+    order:
+      - status
+      - due
+      - file.name
+    sort:
+      - property: status
+        direction: ASC
+    columns:
+      - file.name
+      - status
+      - due
+      - projects
+  - type: table
+    name: Notes
+    filters:
+      and:
+        - file.inFolder("Oblasti/Osobni rust")
+        - file.ext == "md"
+        - file.name != "Osobni rust"
+    order:
+      - file.mtime
+      - file.name
+    sort:
+      - property: file.mtime
+        direction: DESC
+    columns:
+      - file.name
+      - file.mtime

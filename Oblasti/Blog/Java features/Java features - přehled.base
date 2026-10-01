@@ -1,0 +1,55 @@
+filters:
+  and:
+    - note["base"] == link("Java features - přehled.base")
+formulas:
+  zastarale: 'if(note["Clanky"].isEmpty() || !note["Pokryto do"], 0, note["Finalni verze"].filter(value > note["Pokryto do"]).length)'
+  posledni_final: 'note["Finalni verze"].reduce(if(acc == null || value > acc, value, acc), null)'
+  views: 'note["Clanky"].map(value.asFile().properties["Views 6mo"]).filter(value.isType("number")).reduce(acc + value, 0)'
+  stav: 'if(note["Problem"], "⛔ problém", if(note["Clanky"].isEmpty(), if(note["Napady"].isEmpty(), "💡 bez článku", "📝 bez článku, nápad existuje"), if(formula.zastarale > 0, "⚠️ zastaralé " + formula.zastarale + "×", "✅ aktuální")))'
+properties:
+  file.name:
+    displayName: Tema
+  formula.stav:
+    displayName: Stav
+  formula.zastarale:
+    displayName: Zastarale
+  formula.posledni_final:
+    displayName: Posledni final
+  formula.views:
+    displayName: Views 6mo
+  note.Pokryto do:
+    displayName: Pokryto do
+  note.Sleduje se:
+    displayName: Sleduje se
+views:
+  - type: table
+    name: Přehled
+    order:
+      - file.name
+      - formula.stav
+      - Clanky
+      - Napady
+      - Pokryto do
+      - formula.posledni_final
+      - Sleduje se
+      - formula.views
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: K aktualizaci
+    filters:
+      or:
+        - formula.zastarale > 0
+        - note["Problem"]
+    order:
+      - file.name
+      - formula.stav
+      - Clanky
+      - Pokryto do
+      - formula.posledni_final
+      - formula.views
+      - Problem
+    sort:
+      - property: formula.views
+        direction: DESC

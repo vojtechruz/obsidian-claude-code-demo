@@ -1,0 +1,37 @@
+properties:
+  osoba:
+    displayName: Osoba
+  cena:
+    displayName: Cena
+  odkaz:
+    displayName: Odkaz
+views:
+  - type: table
+    name: Nápady
+    filters:
+      and:
+        - file.hasTag("darek-napad")
+    groupBy:
+      property: osoba
+      direction: ASC
+    order:
+      - file.name
+      - osoba
+      - cena
+      - odkaz
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Podle osoby
+    filters:
+      and:
+        - file.hasTag("darek-napad")
+        - osoba.contains(this)
+    order:
+      - file.name
+      - cena
+      - odkaz
+    sort:
+      - property: file.name
+        direction: ASC

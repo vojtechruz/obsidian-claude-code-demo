@@ -1,0 +1,64 @@
+{
+ "competitionId": 4603,
+ "resultCount": 266,
+ "tracks": [
+  {
+   "id": "3ce5abb2-dfc6-534b-a2de-4fe862ca23e5",
+   "short": "RACE",
+   "name": "RACE 8 km, 25 překážek (měřená)",
+   "resultCount": 266,
+   "categories": [
+    {
+     "short": "M",
+     "name": "Muži",
+     "resultCount": 160
+    },
+    {
+     "short": "Z",
+     "name": "Ženy",
+     "resultCount": 106
+    },
+    {
+     "short": "M20",
+     "name": "Muži do 29 let",
+     "resultCount": 38
+    },
+    {
+     "short": "M30",
+     "name": "Muži 30–39 let",
+     "resultCount": 34
+    },
+    {
+     "short": "M40",
+     "name": "Muži 40–49 let",
+     "resultCount": 38
+    },
+    {
+     "short": "M50",
+     "name": "Muži 50+",
+     "resultCount": 50
+    },
+    {
+     "short": "Z20",
+     "name": "Ženy do 29 let",
+     "resultCount": 28
+    },
+    {
+     "short": "Z30",
+     "name": "Ženy 30–39 let",
+     "resultCount": 23
+    },
+    {
+     "short": "Z40",
+     "name": "Ženy 40–49 let",
+     "resultCount": 17
+    },
+    {
+     "short": "Z50",
+     "name": "Ženy 50+",
+     "resultCount": 38
+    }
+   ]
+  }
+ ]
+}

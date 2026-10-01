@@ -1,0 +1,9 @@
+{
+	"inboxDir": "__INBOX/_Clippings",
+	"assetsDir": "__INBOX/_Clippings/Attachments",
+	"dateContentFmt": "YYYY-MM-DD",
+	"extendShareMenu": true,
+	"parseableArticleNoteTitle": "{{ title }}",
+	"parsableArticleNote": "---\ntitle: \"{{ articleTitle }}\"\nsource: \"{{ articleURL }}\"\nauthor: \"{{ author }}\"\npublished: {{ publishedTime }}\ncreated: {{ date }}\ndescription: >-\n  {{ readabilityArticle.excerpt }}\ntags:\n  - \"clippings\"\n---\n{{ articleContent }}",
+	"notParsableArticleNote": "---\nsource: \"{{ articleURL }}\"\ncreated: {{ date }}\ntags:\n  - \"clippings\"\n---\n[{{ articleURL }}]({{ articleURL }})"
+}

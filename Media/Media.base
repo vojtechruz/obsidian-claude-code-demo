@@ -1,0 +1,26 @@
+filters:
+  and:
+    - file.inFolder("Media")
+    - file.ext == "md"
+views:
+  - type: table
+    name: Vse
+    order:
+      - file.name
+      - Category
+      - Genre
+      - Consumed
+      - Rating
+      - Doporucil
+    sort:
+      - property: Category
+        direction: ASC
+  - type: table
+    name: Chci videt / precist
+    filters:
+      and:
+        - Consumed == false
+    order:
+      - file.name
+      - Category
+      - Doporucil

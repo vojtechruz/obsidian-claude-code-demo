@@ -1,0 +1,35 @@
+/* ------------------------------------------------------------------
+   Bold links — ať má tučný odkaz barvu odkazu, ne barvu tučného textu
+
+   Problém: AnuPpuccin barví tučný text v Live Preview pravidlem
+       .cm-s-obsidian span.cm-strong { color: var(--bold-color); }
+   CodeMirror dá tučnému odkazu obě třídy naráz (cm-strong +
+   cm-hmd-internal-link) a tohle pravidlo má vyšší specificitu než
+   barva odkazu, takže **[[Poznámka]]** vypadá jako obyčejný text,
+   kdežto [[Poznámka]] a odkaz v nadpisu svítí barvou akcentu.
+
+   Řešení: přebít to selektorem o jednu třídu specifičtějším.
+   Používá se např. v Carpe Diem MOC (rychlý rozcestník).
+   ------------------------------------------------------------------ */
+
+/* Live Preview / editor */
+.cm-s-obsidian span.cm-strong.cm-hmd-internal-link,
+.cm-s-obsidian span.cm-strong.cm-link,
+.cm-s-obsidian span.cm-strong.cm-url {
+  color: var(--link-color);
+}
+
+/* Nerozřešený odkaz (cíl zatím neexistuje) si nechá svou barvu */
+.cm-s-obsidian span.cm-strong.cm-hmd-internal-link.is-unresolved {
+  color: var(--link-unresolved-color);
+}
+
+/* Reading view — pojistka, kdyby téma obarvovalo i <strong> */
+.markdown-rendered strong .internal-link,
+.markdown-rendered strong .external-link {
+  color: var(--link-color);
+}
+
+.markdown-rendered strong .internal-link.is-unresolved {
+  color: var(--link-unresolved-color);
+}

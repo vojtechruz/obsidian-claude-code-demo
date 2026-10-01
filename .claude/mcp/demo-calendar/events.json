@@ -1,0 +1,573 @@
+{
+  "calendar": {
+    "id": "primary",
+    "summary": "Ondra (demo)",
+    "timeZone": "Europe/Prague"
+  },
+  "events": [
+    {
+      "id": "demo001",
+      "summary": "Czech Java Days",
+      "location": "Praha",
+      "description": "Konference.",
+      "start": {
+        "date": "2026-09-17"
+      },
+      "end": {
+        "date": "2026-09-18"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo002",
+      "summary": "Prednaska: Modularni monolit v praxi",
+      "location": "Czech Java Days, sal B",
+      "description": "Vlastni prednaska.",
+      "start": {
+        "dateTime": "2026-09-17T14:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-09-17T14:45:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo003",
+      "summary": "Deskovky u Novotnych",
+      "location": "u Hany a Filipa",
+      "description": "Pravidelny deskovkovy vecer (kazdy 2. patek).",
+      "start": {
+        "dateTime": "2026-09-18T19:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-09-18T23:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo004",
+      "summary": "1:1 s Adamem",
+      "location": "Lumera Labs – kancelar",
+      "description": "Pravidelne 1:1 s CTO (kazde 2 tydny).",
+      "start": {
+        "dateTime": "2026-09-21T10:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-09-21T10:30:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo005",
+      "summary": "Sprint review + retro",
+      "location": "Lumera Labs – kancelar",
+      "description": "Konec dvoutydenniho sprintu backend tymu.",
+      "start": {
+        "dateTime": "2026-09-24T14:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-09-24T16:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo006",
+      "summary": "Java Pivo Praha",
+      "location": "Praha",
+      "description": "Meetup (kazdy 3. ctvrtek; v zari presunuto kvuli Czech Java Days), Ondra spoluorganizuje.",
+      "start": {
+        "dateTime": "2026-09-24T18:30:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-09-24T21:30:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo007",
+      "summary": "Brdska dvacitka 2026",
+      "location": "Brdy",
+      "description": "Trail 20,4 km, +520 m. Start 9:00, s Radkem.",
+      "start": {
+        "dateTime": "2026-09-26T09:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-09-26T12:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo008",
+      "summary": "Sprint planning",
+      "location": "Lumera Labs – kancelar",
+      "start": {
+        "dateTime": "2026-09-29T09:30:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-09-29T10:30:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo009",
+      "summary": "JOpenSpace – planovaci call",
+      "location": "Online",
+      "description": "Program, ubytovani, doprava.",
+      "start": {
+        "dateTime": "2026-09-30T20:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-09-30T21:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo010",
+      "summary": "Deskovky u Novotnych",
+      "location": "u Hany a Filipa",
+      "description": "Pravidelny deskovkovy vecer (kazdy 2. patek).",
+      "start": {
+        "dateTime": "2026-10-02T19:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-10-02T23:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo011",
+      "summary": "Hradec – navsteva u rodicu",
+      "location": "Hradec Kralove",
+      "start": {
+        "date": "2026-10-03"
+      },
+      "end": {
+        "date": "2026-10-05"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo012",
+      "summary": "1:1 s Adamem",
+      "location": "Lumera Labs – kancelar",
+      "description": "Pravidelne 1:1 s CTO (kazde 2 tydny).",
+      "start": {
+        "dateTime": "2026-10-05T10:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-10-05T10:30:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo013",
+      "summary": "Sprint review + retro",
+      "location": "Lumera Labs – kancelar",
+      "description": "Konec dvoutydenniho sprintu backend tymu.",
+      "start": {
+        "dateTime": "2026-10-08T14:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-10-08T16:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo014",
+      "summary": "Sprint planning",
+      "location": "Lumera Labs – kancelar",
+      "start": {
+        "dateTime": "2026-10-12T09:30:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-10-12T10:30:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo015",
+      "summary": "Zubar – preventivni prohlidka",
+      "location": "Praha-Liben",
+      "start": {
+        "dateTime": "2026-10-13T07:30:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-10-13T08:15:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo016",
+      "summary": "Lucie – vernisaz",
+      "location": "Galerie v Holesovicich",
+      "description": "Lucie vystavuje sve ilustrace.",
+      "start": {
+        "dateTime": "2026-10-14T18:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-10-14T20:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo017",
+      "summary": "Java Pivo Praha",
+      "location": "Praha",
+      "description": "Meetup (kazdy 3. ctvrtek; v zari presunuto kvuli Czech Java Days), Ondra spoluorganizuje.",
+      "start": {
+        "dateTime": "2026-10-15T18:30:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-10-15T21:30:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo018",
+      "summary": "Deskovky u Novotnych",
+      "location": "u Hany a Filipa",
+      "description": "Pravidelny deskovkovy vecer (kazdy 2. patek).",
+      "start": {
+        "dateTime": "2026-10-16T19:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-10-16T23:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo019",
+      "summary": "Vymena pneumatik",
+      "location": "Pneuservis Liben",
+      "description": "Prezuti na zimni.",
+      "start": {
+        "dateTime": "2026-10-17T10:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-10-17T11:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo020",
+      "summary": "Podzimni pulmaraton 2026",
+      "location": "Praha",
+      "description": "21,1 km, start 9:00, cil pod 1:50.",
+      "start": {
+        "dateTime": "2026-10-18T09:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-10-18T11:30:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo021",
+      "summary": "1:1 s Adamem",
+      "location": "Lumera Labs – kancelar",
+      "description": "Pravidelne 1:1 s CTO (kazde 2 tydny).",
+      "start": {
+        "dateTime": "2026-10-19T10:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-10-19T10:30:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo022",
+      "summary": "Sprint review + retro",
+      "location": "Lumera Labs – kancelar",
+      "description": "Konec dvoutydenniho sprintu backend tymu.",
+      "start": {
+        "dateTime": "2026-10-22T14:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-10-22T16:00:00+02:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo023",
+      "summary": "JOpenSpace 2026",
+      "description": "Pa–Ne, unkonference.",
+      "start": {
+        "date": "2026-10-23"
+      },
+      "end": {
+        "date": "2026-10-26"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo024",
+      "summary": "Sprint planning",
+      "location": "Lumera Labs – kancelar",
+      "start": {
+        "dateTime": "2026-10-26T09:30:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-10-26T10:30:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo025",
+      "summary": "Deskovky u Novotnych",
+      "location": "u Hany a Filipa",
+      "description": "Pravidelny deskovkovy vecer (kazdy 2. patek).",
+      "start": {
+        "dateTime": "2026-10-30T19:00:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-10-30T23:00:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo026",
+      "summary": "1:1 s Adamem",
+      "location": "Lumera Labs – kancelar",
+      "description": "Pravidelne 1:1 s CTO (kazde 2 tydny).",
+      "start": {
+        "dateTime": "2026-11-02T10:00:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-11-02T10:30:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo027",
+      "summary": "Divadlo s Lucii",
+      "location": "Praha",
+      "start": {
+        "dateTime": "2026-11-04T19:00:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-11-04T21:30:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo028",
+      "summary": "Sprint review + retro",
+      "location": "Lumera Labs – kancelar",
+      "description": "Konec dvoutydenniho sprintu backend tymu.",
+      "start": {
+        "dateTime": "2026-11-05T14:00:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-11-05T16:00:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo029",
+      "summary": "Sprint planning",
+      "location": "Lumera Labs – kancelar",
+      "start": {
+        "dateTime": "2026-11-09T09:30:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-11-09T10:30:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo030",
+      "summary": "Konec zaruky – mycka",
+      "description": "Jen informace, zadna akce.",
+      "start": {
+        "date": "2026-11-12"
+      },
+      "end": {
+        "date": "2026-11-13"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo031",
+      "summary": "Deskovky u Novotnych",
+      "location": "u Hany a Filipa",
+      "description": "Pravidelny deskovkovy vecer (kazdy 2. patek).",
+      "start": {
+        "dateTime": "2026-11-13T19:00:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-11-13T23:00:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo032",
+      "summary": "1:1 s Adamem",
+      "location": "Lumera Labs – kancelar",
+      "description": "Pravidelne 1:1 s CTO (kazde 2 tydny).",
+      "start": {
+        "dateTime": "2026-11-16T10:00:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-11-16T10:30:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo033",
+      "summary": "Sprint review + retro",
+      "location": "Lumera Labs – kancelar",
+      "description": "Konec dvoutydenniho sprintu backend tymu.",
+      "start": {
+        "dateTime": "2026-11-19T14:00:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-11-19T16:00:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo034",
+      "summary": "Java Pivo Praha",
+      "location": "Praha",
+      "description": "Meetup (kazdy 3. ctvrtek; v zari presunuto kvuli Czech Java Days), Ondra spoluorganizuje.",
+      "start": {
+        "dateTime": "2026-11-19T18:30:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-11-19T21:30:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo035",
+      "summary": "Hradec – Mamina oslava narozenin",
+      "location": "Hradec Kralove",
+      "description": "Oslava posunuta na vikend 21.–22. 11.",
+      "start": {
+        "date": "2026-11-21"
+      },
+      "end": {
+        "date": "2026-11-23"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo036",
+      "summary": "Sprint planning",
+      "location": "Lumera Labs – kancelar",
+      "start": {
+        "dateTime": "2026-11-23T09:30:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-11-23T10:30:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo037",
+      "summary": "Lumera Labs – vanocni vecirek",
+      "location": "Lumera Labs – kancelar",
+      "start": {
+        "dateTime": "2026-11-26T18:00:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-11-26T23:00:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo038",
+      "summary": "Deskovky u Novotnych",
+      "location": "u Hany a Filipa",
+      "description": "Pravidelny deskovkovy vecer (kazdy 2. patek).",
+      "start": {
+        "dateTime": "2026-11-27T19:00:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-11-27T23:00:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    },
+    {
+      "id": "demo039",
+      "summary": "1:1 s Adamem",
+      "location": "Lumera Labs – kancelar",
+      "description": "Pravidelne 1:1 s CTO (kazde 2 tydny).",
+      "start": {
+        "dateTime": "2026-11-30T10:00:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "end": {
+        "dateTime": "2026-11-30T10:30:00+01:00",
+        "timeZone": "Europe/Prague"
+      },
+      "status": "confirmed"
+    }
+  ]
+}

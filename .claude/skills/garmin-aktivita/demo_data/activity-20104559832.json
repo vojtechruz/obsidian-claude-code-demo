@@ -1,0 +1,35 @@
+{
+ "activityId": 20104559832,
+ "activityName": "Brdska dvacitka 2026",
+ "locationName": "Dobříš",
+ "activityTypeDTO": {
+  "typeId": 6,
+  "typeKey": "trail_running",
+  "parentTypeId": 1
+ },
+ "summaryDTO": {
+  "startTimeLocal": "2026-09-26T09:30:00.0",
+  "startTimeGMT": "2026-09-26T07:30:00.0",
+  "averageRunCadence": 169.0,
+  "trainingEffect": 4.8,
+  "distance": 20400.0,
+  "duration": 7092.0,
+  "movingDuration": 7063.0,
+  "elapsedDuration": 7092.0,
+  "elevationGain": 520.0,
+  "elevationLoss": 520.0,
+  "minElevation": 398.0,
+  "maxElevation": 716.0,
+  "averageSpeed": 2.876,
+  "averageMovingSpeed": 2.888,
+  "maxSpeed": 4.659,
+  "calories": 1402.0,
+  "averageHR": 160.0,
+  "maxHR": 175.0,
+  "steps": 19975,
+  "anaerobicTrainingEffect": 2.6,
+  "activityTrainingLoad": 338.0,
+  "minTemperature": 11.0,
+  "maxTemperature": 16.0
+ }
+}

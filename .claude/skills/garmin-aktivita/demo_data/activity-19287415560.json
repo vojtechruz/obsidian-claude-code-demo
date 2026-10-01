@@ -1,0 +1,35 @@
+{
+ "activityId": 19287415560,
+ "activityName": "Vltavsky pulmaraton 2026",
+ "locationName": "Praha",
+ "activityTypeDTO": {
+  "typeId": 1,
+  "typeKey": "running",
+  "parentTypeId": 1
+ },
+ "summaryDTO": {
+  "startTimeLocal": "2026-05-16T09:00:00.0",
+  "startTimeGMT": "2026-05-16T07:00:00.0",
+  "averageRunCadence": 174.0,
+  "trainingEffect": 4.9,
+  "distance": 21100.0,
+  "duration": 6728.0,
+  "movingDuration": 6719.0,
+  "elapsedDuration": 6728.0,
+  "elevationGain": 64.0,
+  "elevationLoss": 64.0,
+  "minElevation": 187.0,
+  "maxElevation": 231.0,
+  "averageSpeed": 3.136,
+  "averageMovingSpeed": 3.14,
+  "maxSpeed": 4.158,
+  "calories": 1212.0,
+  "averageHR": 168.0,
+  "maxHR": 192.0,
+  "steps": 19511,
+  "anaerobicTrainingEffect": 2.4,
+  "activityTrainingLoad": 356.0,
+  "minTemperature": 14.0,
+  "maxTemperature": 19.0
+ }
+}

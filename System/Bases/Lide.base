@@ -1,0 +1,55 @@
+properties:
+  darky:
+    displayName: Dárky
+  darky_prilezitosti:
+    displayName: Příležitosti
+  narozeniny:
+    displayName: Narozeniny
+  svatek:
+    displayName: Svátek
+views:
+  - type: table
+    name: Obdarováváme
+    filters:
+      and:
+        - file.inFolder("Lide")
+        - darky == "ano"
+    order:
+      - file.name
+      - darky_prilezitosti
+      - narozeniny
+      - svatek
+    sort:
+      - property: file.name
+        direction: ASC
+    columnSize:
+      note.darky_prilezitosti: 380
+  - type: table
+    name: Historie
+    filters:
+      and:
+        - file.inFolder("Lide")
+        - darky == "historie"
+    order:
+      - file.name
+      - narozeniny
+      - svatek
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Všichni
+    filters:
+      and:
+        - file.inFolder("Lide")
+        - file.ext == "md"
+        - file.name != "Lide"
+    order:
+      - file.name
+      - darky
+      - darky_prilezitosti
+      - narozeniny
+      - svatek
+    sort:
+      - property: file.name
+        direction: ASC

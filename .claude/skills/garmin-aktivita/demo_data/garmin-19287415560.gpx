@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="demo fixtures (fiktivni trasa)" xmlns="http://www.topografix.com/GPX/1/1">
+  <trk>
+    <name>Vltavsky pulmaraton 2026</name>
+    <trkseg>
+      <trkpt lat="50.070000" lon="14.420000"><ele>420.0</ele><time>2026-05-16T07:00:00Z</time></trkpt>
+      <trkpt lat="50.079861" lon="14.417772"><ele>502.3</ele><time>2026-05-16T07:05:09Z</time></trkpt>
+      <trkpt lat="50.088922" lon="14.411269"><ele>553.1</ele><time>2026-05-16T07:10:17Z</time></trkpt>
+      <trkpt lat="50.096451" lon="14.401017"><ele>553.1</ele><time>2026-05-16T07:15:23Z</time></trkpt>
+      <trkpt lat="50.101837" lon="14.387848"><ele>502.3</ele><time>2026-05-16T07:20:35Z</time></trkpt>
+      <trkpt lat="50.104644" lon="14.372827"><ele>420.0</ele><time>2026-05-16T07:25:47Z</time></trkpt>
+      <trkpt lat="50.104644" lon="14.357173"><ele>420.0</ele><time>2026-05-16T07:30:58Z</time></trkpt>
+      <trkpt lat="50.101837" lon="14.342152"><ele>420.0</ele><time>2026-05-16T07:36:04Z</time></trkpt>
+      <trkpt lat="50.096451" lon="14.328983"><ele>420.0</ele><time>2026-05-16T07:41:11Z</time></trkpt>
+      <trkpt lat="50.088922" lon="14.318731"><ele>420.0</ele><time>2026-05-16T07:46:18Z</time></trkpt>
+      <trkpt lat="50.079861" lon="14.312228"><ele>420.0</ele><time>2026-05-16T07:51:30Z</time></trkpt>
+      <trkpt lat="50.070000" lon="14.310000"><ele>502.3</ele><time>2026-05-16T07:56:39Z</time></trkpt>
+      <trkpt lat="50.060139" lon="14.312228"><ele>553.1</ele><time>2026-05-16T08:01:57Z</time></trkpt>
+      <trkpt lat="50.051078" lon="14.318731"><ele>553.1</ele><time>2026-05-16T08:07:19Z</time></trkpt>
+      <trkpt lat="50.043549" lon="14.328983"><ele>502.3</ele><time>2026-05-16T08:12:39Z</time></trkpt>
+      <trkpt lat="50.038163" lon="14.342152"><ele>420.0</ele><time>2026-05-16T08:17:59Z</time></trkpt>
+      <trkpt lat="50.035356" lon="14.357173"><ele>420.0</ele><time>2026-05-16T08:23:16Z</time></trkpt>
+      <trkpt lat="50.035356" lon="14.372827"><ele>420.0</ele><time>2026-05-16T08:28:59Z</time></trkpt>
+      <trkpt lat="50.038163" lon="14.387848"><ele>420.0</ele><time>2026-05-16T08:34:36Z</time></trkpt>
+      <trkpt lat="50.043549" lon="14.401017"><ele>420.0</ele><time>2026-05-16T08:40:18Z</time></trkpt>
+      <trkpt lat="50.051078" lon="14.411269"><ele>420.0</ele><time>2026-05-16T08:45:56Z</time></trkpt>
+      <trkpt lat="50.060139" lon="14.417772"><ele>502.3</ele><time>2026-05-16T08:51:34Z</time></trkpt>
+      <trkpt lat="50.070000" lon="14.420000"><ele>553.1</ele><time>2026-05-16T08:52:08Z</time></trkpt>
+    </trkseg>
+  </trk>
+</gpx>

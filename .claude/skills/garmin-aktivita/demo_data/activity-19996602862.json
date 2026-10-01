@@ -1,0 +1,22 @@
+{
+ "activityId": 19996602862,
+ "activityName": "Praha Bouldering",
+ "locationName": "Praha",
+ "activityTypeDTO": {
+  "typeKey": "bouldering",
+  "typeId": 0,
+  "parentTypeId": 0
+ },
+ "summaryDTO": {
+  "startTimeLocal": "2026-09-16T18:05:00.0",
+  "startTimeGMT": "2026-09-16T16:05:00.0",
+  "distance": 0.0,
+  "duration": 3008.0,
+  "movingDuration": 2971.0,
+  "elevationGain": 0.0,
+  "averageHR": 116.0,
+  "maxHR": 129.0,
+  "calories": 341.0,
+  "averageSpeed": 0.0
+ }
+}

@@ -1,0 +1,16 @@
+filters:
+  and:
+    - note["base"] == link("Blog Ideas.base")
+properties:
+  file.name:
+    displayName: Name
+views:
+  - type: table
+    name: Table View
+    order:
+      - file.name
+      - Star
+      - Tags
+      - Priority
+      - AI Expected Effort
+      - AI Suggested Priority

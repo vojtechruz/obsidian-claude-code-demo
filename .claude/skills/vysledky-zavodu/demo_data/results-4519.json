@@ -1,0 +1,64 @@
+{
+ "competitionId": 4519,
+ "resultCount": 1844,
+ "tracks": [
+  {
+   "id": "73d9a298-9c9f-5c0d-9547-b45e452bb824",
+   "short": "21K",
+   "name": "Půlmaraton 21,1 km",
+   "resultCount": 1844,
+   "categories": [
+    {
+     "short": "M",
+     "name": "Muži",
+     "resultCount": 1151
+    },
+    {
+     "short": "Z",
+     "name": "Ženy",
+     "resultCount": 693
+    },
+    {
+     "short": "M20",
+     "name": "Muži do 29 let",
+     "resultCount": 281
+    },
+    {
+     "short": "M30",
+     "name": "Muži 30–39 let",
+     "resultCount": 277
+    },
+    {
+     "short": "M40",
+     "name": "Muži 40–49 let",
+     "resultCount": 245
+    },
+    {
+     "short": "M50",
+     "name": "Muži 50+",
+     "resultCount": 348
+    },
+    {
+     "short": "Z20",
+     "name": "Ženy do 29 let",
+     "resultCount": 167
+    },
+    {
+     "short": "Z30",
+     "name": "Ženy 30–39 let",
+     "resultCount": 170
+    },
+    {
+     "short": "Z40",
+     "name": "Ženy 40–49 let",
+     "resultCount": 154
+    },
+    {
+     "short": "Z50",
+     "name": "Ženy 50+",
+     "resultCount": 202
+    }
+   ]
+  }
+ ]
+}

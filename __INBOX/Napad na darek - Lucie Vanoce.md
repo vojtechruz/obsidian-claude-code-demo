@@ -1,0 +1,3 @@
+- Lucie zminovala na vernisazi u kamaradky akvarelove barvy v kovove krabicce (ty profesionalni, polovicni panvicky)
+- Nebo kurz keramiky pro dva – neco spolecneho na zimu
+- Do [[Vanocni darky 2026]]

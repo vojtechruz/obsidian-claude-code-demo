@@ -1,0 +1,4 @@
+- Logisticky SaaS (planovani tras pro dopravce), cca 60 lidi, Karlin
+- Stack: Java 21 -> 25, Spring Boot 3, Kafka, PostgreSQL, Kubernetes
+- Muj tym: backend "Routing" - 5 lidi, dvoutydenni sprinty, retro ve ctvrtek
+- Sef: [[Adam Benes]], QA: [[Zuzana Dvorakova]]

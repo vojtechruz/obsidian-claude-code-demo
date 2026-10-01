@@ -1,0 +1,4 @@
+- Zuzana: na JOpenSpace se prihlasila taky, jedeme spolu vlakem v patek 23. 10.?
+- Obklady Na Klic – obhlidka po 5. 10. v 17:30, Lucie bude doma
+- Doplnit gely na pulmaraton (zbyl jen jeden)
+- Bublina: dosly granule pro sterilizovane kocky

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="demo fixtures (fiktivni trasa)" xmlns="http://www.topografix.com/GPX/1/1">
+  <trk>
+    <name>Brdska dvacitka 2025</name>
+    <trkseg>
+      <trkpt lat="49.780000" lon="14.120000"><ele>420.0</ele><time>2025-10-11T07:30:00Z</time></trkpt>
+      <trkpt lat="49.790316" lon="14.117557"><ele>505.6</ele><time>2025-10-11T07:36:14Z</time></trkpt>
+      <trkpt lat="49.799716" lon="14.110443"><ele>555.5</ele><time>2025-10-11T07:42:48Z</time></trkpt>
+      <trkpt lat="49.807364" lon="14.099292"><ele>548.7</ele><time>2025-10-11T07:49:47Z</time></trkpt>
+      <trkpt lat="49.812581" lon="14.085094"><ele>488.2</ele><time>2025-10-11T07:56:59Z</time></trkpt>
+      <trkpt lat="49.814902" lon="14.069110"><ele>420.0</ele><time>2025-10-11T08:04:16Z</time></trkpt>
+      <trkpt lat="49.814122" lon="14.052761"><ele>420.0</ele><time>2025-10-11T08:11:38Z</time></trkpt>
+      <trkpt lat="49.810311" lon="14.037500"><ele>420.0</ele><time>2025-10-11T08:18:49Z</time></trkpt>
+      <trkpt lat="49.803806" lon="14.024682"><ele>420.0</ele><time>2025-10-11T08:25:30Z</time></trkpt>
+      <trkpt lat="49.795186" lon="14.015447"><ele>420.0</ele><time>2025-10-11T08:32:11Z</time></trkpt>
+      <trkpt lat="49.785216" lon="14.010614"><ele>461.3</ele><time>2025-10-11T08:38:31Z</time></trkpt>
+      <trkpt lat="49.774784" lon="14.010614"><ele>534.5</ele><time>2025-10-11T08:44:12Z</time></trkpt>
+      <trkpt lat="49.764814" lon="14.015447"><ele>559.9</ele><time>2025-10-11T08:49:51Z</time></trkpt>
+      <trkpt lat="49.756194" lon="14.024682"><ele>526.8</ele><time>2025-10-11T08:55:03Z</time></trkpt>
+      <trkpt lat="49.749689" lon="14.037500"><ele>449.1</ele><time>2025-10-11T09:00:08Z</time></trkpt>
+      <trkpt lat="49.745878" lon="14.052761"><ele>420.0</ele><time>2025-10-11T09:05:09Z</time></trkpt>
+      <trkpt lat="49.745098" lon="14.069110"><ele>420.0</ele><time>2025-10-11T09:10:28Z</time></trkpt>
+      <trkpt lat="49.747419" lon="14.085094"><ele>420.0</ele><time>2025-10-11T09:15:46Z</time></trkpt>
+      <trkpt lat="49.752636" lon="14.099292"><ele>420.0</ele><time>2025-10-11T09:21:32Z</time></trkpt>
+      <trkpt lat="49.760284" lon="14.110443"><ele>420.0</ele><time>2025-10-11T09:27:24Z</time></trkpt>
+      <trkpt lat="49.769684" lon="14.117557"><ele>498.9</ele><time>2025-10-11T09:33:57Z</time></trkpt>
+      <trkpt lat="49.780000" lon="14.120000"><ele>553.1</ele><time>2025-10-11T09:36:40Z</time></trkpt>
+    </trkseg>
+  </trk>
+</gpx>

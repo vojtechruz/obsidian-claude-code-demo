@@ -1,0 +1,122 @@
+{
+ "competitionId": 4777,
+ "resultCount": 270,
+ "tracks": [
+  {
+   "id": "a35ad1bb-cbee-541e-8b5e-76c9794b3faa",
+   "short": "20K",
+   "name": "Trail 20 km (+520 m)",
+   "resultCount": 164,
+   "categories": [
+    {
+     "short": "M",
+     "name": "Muži",
+     "resultCount": 119
+    },
+    {
+     "short": "Z",
+     "name": "Ženy",
+     "resultCount": 45
+    },
+    {
+     "short": "M20",
+     "name": "Muži do 29 let",
+     "resultCount": 30
+    },
+    {
+     "short": "M30",
+     "name": "Muži 30–39 let",
+     "resultCount": 30
+    },
+    {
+     "short": "M40",
+     "name": "Muži 40–49 let",
+     "resultCount": 28
+    },
+    {
+     "short": "M50",
+     "name": "Muži 50+",
+     "resultCount": 31
+    },
+    {
+     "short": "Z20",
+     "name": "Ženy do 29 let",
+     "resultCount": 13
+    },
+    {
+     "short": "Z30",
+     "name": "Ženy 30–39 let",
+     "resultCount": 14
+    },
+    {
+     "short": "Z40",
+     "name": "Ženy 40–49 let",
+     "resultCount": 9
+    },
+    {
+     "short": "Z50",
+     "name": "Ženy 50+",
+     "resultCount": 9
+    }
+   ]
+  },
+  {
+   "id": "2efbe83b-d211-56a1-8ab0-e40f99966edb",
+   "short": "10K",
+   "name": "Trail 10 km (+240 m)",
+   "resultCount": 106,
+   "categories": [
+    {
+     "short": "M",
+     "name": "Muži",
+     "resultCount": 57
+    },
+    {
+     "short": "Z",
+     "name": "Ženy",
+     "resultCount": 49
+    },
+    {
+     "short": "M20",
+     "name": "Muži do 29 let",
+     "resultCount": 13
+    },
+    {
+     "short": "M30",
+     "name": "Muži 30–39 let",
+     "resultCount": 15
+    },
+    {
+     "short": "M40",
+     "name": "Muži 40–49 let",
+     "resultCount": 12
+    },
+    {
+     "short": "M50",
+     "name": "Muži 50+",
+     "resultCount": 17
+    },
+    {
+     "short": "Z20",
+     "name": "Ženy do 29 let",
+     "resultCount": 12
+    },
+    {
+     "short": "Z30",
+     "name": "Ženy 30–39 let",
+     "resultCount": 6
+    },
+    {
+     "short": "Z40",
+     "name": "Ženy 40–49 let",
+     "resultCount": 14
+    },
+    {
+     "short": "Z50",
+     "name": "Ženy 50+",
+     "resultCount": 17
+    }
+   ]
+  }
+ ]
+}

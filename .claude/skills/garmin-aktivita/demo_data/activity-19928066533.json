@@ -1,0 +1,35 @@
+{
+ "activityId": 19928066533,
+ "activityName": "Hradec Kralove Beh",
+ "locationName": "Praha",
+ "activityTypeDTO": {
+  "typeId": 1,
+  "typeKey": "running",
+  "parentTypeId": 1
+ },
+ "summaryDTO": {
+  "startTimeLocal": "2026-09-06T07:05:00.0",
+  "startTimeGMT": "2026-09-06T05:05:00.0",
+  "averageRunCadence": 168.0,
+  "trainingEffect": 3.2,
+  "distance": 17023.0,
+  "duration": 5446.0,
+  "movingDuration": 5424.0,
+  "elapsedDuration": 5446.0,
+  "elevationGain": 109.0,
+  "elevationLoss": 109.0,
+  "minElevation": 188.0,
+  "maxElevation": 262.0,
+  "averageSpeed": 3.126,
+  "averageMovingSpeed": 3.138,
+  "maxSpeed": 4.041,
+  "calories": 993.0,
+  "averageHR": 146.0,
+  "maxHR": 167.0,
+  "steps": 15248,
+  "anaerobicTrainingEffect": 0.6,
+  "activityTrainingLoad": 118.0,
+  "minTemperature": 11.0,
+  "maxTemperature": 18.0
+ }
+}

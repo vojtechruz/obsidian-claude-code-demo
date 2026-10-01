@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "demo-calendar": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["${CLAUDE_PROJECT_DIR:-.}/.claude/mcp/demo-calendar/server.py"]
+    }
+  }
+}

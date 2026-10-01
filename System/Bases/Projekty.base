@@ -1,0 +1,73 @@
+filters:
+  and:
+    - file.hasTag("Projekt")
+    - not:
+        - file.inFolder("Templates")
+properties:
+  oblast:
+    displayName: Oblast
+  start_date:
+    displayName: Start
+  due_date:
+    displayName: Due
+  status:
+    displayName: Status
+views:
+  - type: table
+    name: Projekty
+    filters:
+      and:
+        - file.hasTag("Projekt")
+        - '!file.inFolder("System/Templates")'
+    order:
+      - status
+      - due_date
+      - file.name
+    sort:
+      - property: status
+        direction: ASC
+    columns:
+      - file.name
+      - status
+      - oblast
+      - due_date
+      - start_date
+  - type: table
+    name: Aktivní
+    filters:
+      and:
+        - file.hasTag("Projekt")
+        - not:
+            - file.inFolder("System/Templates")
+        - or:
+            - status == "To Do"
+            - status == "In progress"
+            - status == "In Progress"
+            - status == "Waiting"
+    order:
+      - status
+      - due_date
+      - file.name
+    sort:
+      - property: status
+        direction: ASC
+    columns:
+      - file.name
+      - status
+      - oblast
+      - due_date
+  - type: table
+    name: Hotové
+    filters:
+      and:
+        - file.hasTag("Projekt")
+        - not:
+            - file.inFolder("System/Templates")
+        - status == "Done"
+    order:
+      - due_date
+      - file.name
+    columns:
+      - file.name
+      - oblast
+      - due_date

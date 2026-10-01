@@ -1,0 +1,47 @@
+filters:
+  and:
+    - note["base"] == link("Blog Articles.base")
+properties:
+  file.name:
+    displayName: Clanek
+  note.Views 6mo:
+    displayName: Views 6mo
+views:
+  - type: table
+    name: Publikovane
+    filters:
+      and:
+        - note["Draft Status"] == "Published"
+    order:
+      - file.name
+      - Date
+      - Topics
+      - Series
+      - Views 6mo
+      - URL
+    sort:
+      - property: Date
+        direction: DESC
+  - type: table
+    name: Nejctenejsi
+    filters:
+      and:
+        - note["Draft Status"] == "Published"
+    order:
+      - file.name
+      - Views 6mo
+      - Date
+      - Topics
+    sort:
+      - property: Views 6mo
+        direction: DESC
+  - type: table
+    name: Drafty
+    filters:
+      and:
+        - note["Draft Status"] != "Published"
+    order:
+      - file.name
+      - Draft Status
+      - Series
+      - Topics

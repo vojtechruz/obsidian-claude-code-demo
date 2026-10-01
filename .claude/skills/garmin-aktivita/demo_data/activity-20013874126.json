@@ -1,0 +1,22 @@
+{
+ "activityId": 20013874126,
+ "activityName": "Beroun Karlstejn Turistika",
+ "locationName": "Karlštejn",
+ "activityTypeDTO": {
+  "typeKey": "hiking",
+  "typeId": 0,
+  "parentTypeId": 0
+ },
+ "summaryDTO": {
+  "startTimeLocal": "2026-09-19T10:20:00.0",
+  "startTimeGMT": "2026-09-19T08:20:00.0",
+  "distance": 11200.0,
+  "duration": 10200.0,
+  "movingDuration": 9792.0,
+  "elevationGain": 290.0,
+  "averageHR": 102.0,
+  "maxHR": 124.0,
+  "calories": 1043.0,
+  "averageSpeed": 1.098
+ }
+}

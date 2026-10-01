@@ -1,0 +1,9 @@
+{
+  "h1": "15",
+  "h2": "30",
+  "h3": "45",
+  "h4": "60",
+  "h5": "75",
+  "h6": "90",
+  "treatHighestPresentHeadingAsH1": true
+}

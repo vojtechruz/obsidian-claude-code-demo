@@ -1,0 +1,35 @@
+{
+ "activityId": 20037940409,
+ "activityName": "Praha Beh",
+ "locationName": "Praha",
+ "activityTypeDTO": {
+  "typeId": 1,
+  "typeKey": "running",
+  "parentTypeId": 1
+ },
+ "summaryDTO": {
+  "startTimeLocal": "2026-09-24T07:38:00.0",
+  "startTimeGMT": "2026-09-24T05:38:00.0",
+  "averageRunCadence": 168.0,
+  "trainingEffect": 2.6,
+  "distance": 6034.0,
+  "duration": 1900.0,
+  "movingDuration": 1870.0,
+  "elapsedDuration": 1900.0,
+  "elevationGain": 69.0,
+  "elevationLoss": 69.0,
+  "minElevation": 188.0,
+  "maxElevation": 242.0,
+  "averageSpeed": 3.176,
+  "averageMovingSpeed": 3.227,
+  "maxSpeed": 4.05,
+  "calories": 339.0,
+  "averageHR": 140.0,
+  "maxHR": 158.0,
+  "steps": 5320,
+  "anaerobicTrainingEffect": 0.6,
+  "activityTrainingLoad": 41.0,
+  "minTemperature": 11.0,
+  "maxTemperature": 18.0
+ }
+}

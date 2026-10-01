@@ -1,0 +1,2 @@
+- Adam na 1:1 doporucil knihu o vedeni tymu pro nove tech leady – "The Manager's Path"
+- Zjistit, jestli je v knihovne nebo jako e-kniha

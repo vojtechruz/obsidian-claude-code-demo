@@ -1,0 +1,3 @@
+- Napad: male CLI v Jave (JBang?), ktere v patek vytahne z Jiry hotove tickety tymu za sprint a udela z nich draft do retra
+- Mohl by to byt i clanek na blog: "JBang skripty misto bashe"
+- Vyzkouset na sprintu, co konci 8. 10.

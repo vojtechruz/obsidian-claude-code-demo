@@ -1,0 +1,35 @@
+{
+ "activityId": 19468803217,
+ "activityName": "Bahenni liska 2026",
+ "locationName": "Benešov",
+ "activityTypeDTO": {
+  "typeId": 158,
+  "typeKey": "obstacle_run",
+  "parentTypeId": 1
+ },
+ "summaryDTO": {
+  "startTimeLocal": "2026-06-20T10:40:00.0",
+  "startTimeGMT": "2026-06-20T08:40:00.0",
+  "averageRunCadence": 158.0,
+  "trainingEffect": 4.1,
+  "distance": 8000.0,
+  "duration": 4350.0,
+  "movingDuration": 4343.0,
+  "elapsedDuration": 4350.0,
+  "elevationGain": 180.0,
+  "elevationLoss": 180.0,
+  "minElevation": 352.0,
+  "maxElevation": 448.0,
+  "averageSpeed": 1.839,
+  "averageMovingSpeed": 1.842,
+  "maxSpeed": 2.491,
+  "calories": 820.0,
+  "averageHR": 158.0,
+  "maxHR": 182.0,
+  "steps": 11455,
+  "anaerobicTrainingEffect": 3.2,
+  "activityTrainingLoad": 241.0,
+  "minTemperature": 21.0,
+  "maxTemperature": 25.0
+ }
+}
