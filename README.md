@@ -9,7 +9,7 @@ Externí služby (Garmin, Plausible, časomíra, Google Calendar) nahrazují lok
 Potřebuješ [Obsidian](https://obsidian.md), [Claude Code](https://claude.com/claude-code) a Python 3.8+ (stačí standardní knihovna).
 
 ```bash
-git clone <url> obsidian-demo
+git clone https://github.com/vojtechruz/obsidian-claude-code-demo.git obsidian-demo
 cd obsidian-demo
 claude          # potvrď „trust this folder“ – pak platí .claude/settings.json (demo kalendář + skripty skills bez ptaní)
 ```
