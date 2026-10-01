@@ -13,4 +13,4 @@ tags:
   - task
 ---
 
-Fiktivni vault s Carpe Diem, TaskNotes a skills, aby si ho lidi mohli naklonovat.
+Fiktivni vault s denikem, TaskNotes a skills, aby si ho lidi mohli naklonovat.

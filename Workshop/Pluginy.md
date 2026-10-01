@@ -7,7 +7,7 @@ Pluginy jsou součástí repa (`.obsidian/plugins/`). Po otevření vaultu stač
 | Plugin | K čemu tu je | Kde to vidět |
 | --- | --- | --- |
 | **Bases** | Tabulkové a kartové pohledy nad poznámkami podle frontmatteru, bez psaní kódu. | `System/Bases/*.base`, vložené v poznámkách oblastí a projektů, `Media/Media.base`, `Deskovky.base`, `Lide/Lide.md` |
-| **Daily notes** + **Templates** | Denní poznámka v `Carpe Diem/YYYY/YYYY-MM/`. | kalendářová ikona, šablona `System/Templates/Daily note.md` |
+| **Daily notes** + **Templates** | Denní poznámka v `Denik/YYYY/YYYY-MM/`. | kalendářová ikona, šablona `System/Templates/Daily note.md` |
 | **Properties** | Frontmatter jako formulář. | libovolný task nebo osoba |
 
 ## Komunitní

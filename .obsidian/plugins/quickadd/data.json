@@ -6,7 +6,7 @@
       "type": "Capture",
       "command": true,
       "appendLink": false,
-      "captureTo": "Carpe Diem/{{DATE:YYYY/YYYY-MM/YYYY-MM-DD}}.md",
+      "captureTo": "Denik/{{DATE:YYYY/YYYY-MM/YYYY-MM-DD}}.md",
       "captureToActiveFile": false,
       "captureToCanvasNodeId": "",
       "activeFileWritePosition": "cursor",

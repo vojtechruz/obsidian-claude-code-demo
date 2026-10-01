@@ -5,13 +5,15 @@ Každý scénář jde pustit samostatně. Po vyzkoušení vrať vault do výchoz
 > „Dnes“ je ve vaultu **čtvrtek 1. 10. 2026**. Když skill pracuje s dneškem, začni prompt třeba „Předstírej, že je 1. 10. 2026.“
 
 ## 1. Týdenní souhrn deníku ⭐
+Jak deník funguje, vysvětluje [[Jak funguje denik]].
+
 **Prompt:** `Udělej týdenní souhrn 2026-W39`
 
-- **Co se stane:** `carpe-summary` přečte denní poznámky 21.–27. 9. a roztřídí je do kategorií (Práce, Lucie, Rodina a přátelé, Kondice a zdraví…). Nahoru napíše AI shrnutí, doplní řádek z Garminu a blogové statistiky a do neděle zapíše značku `xjs week`.
-- **Kam se podívat:** nová poznámka `Carpe Diem/2026/Weekly/2026-W39.md` a závěrečný report skillu, tedy co vynechal, co sloučil a co přesunul.
+- **Co se stane:** `denik-souhrn` přečte denní poznámky 21.–27. 9. a roztřídí je do kategorií (Práce, Lucie, Rodina a přátelé, Kondice a zdraví…). Nahoru napíše AI shrnutí, doplní řádek z Garminu a blogové statistiky a do neděle zapíše značku `xjs week`.
+- **Kam se podívat:** nová poznámka `Denik/2026/Weekly/2026-W39.md` a závěrečný report skillu, tedy co vynechal, co sloučil a co přesunul.
 - **Pokračování:**
   - `Udělej souhrn W38 a W40` a pak `měsíční souhrn září 2026`. Měsíc se skládá z týdnů.
-  - Pak `aktualizuj MOC`, výsledek je v `Carpe Diem/Carpe Diem.md`.
+  - Pak `aktualizuj MOC`, výsledek je v `Denik/Denik.md`.
   - Pro porovnání se podívej na hotové měsíce, třeba `2026-04` (Lisabon a povýšení), a na rok `2025`.
 
 ## 2. Otázky na deník
@@ -21,14 +23,14 @@ Každý scénář jde pustit samostatně. Po vyzkoušení vrať vault do výchoz
 - `Co jsem dělal v Lisabonu?`
 - `Jak dopadly moje půlmaratony?`
 
-`carpe-diem-query` odpovídá s daty a odkazy na denní poznámky a souhrny.
+`denik-dotazy` odpovídá s daty a odkazy na denní poznámky a souhrny.
 
 ## 3. Plán týdne ⭐
 **Prompt:** `Naplánuj mi týden 2026-W41` (týden uveď výslovně, protože skript bere dnešní datum ze systému).
 
 - **Co se stane:** `tydenni-plan` porovná plán W40 (`2026-W40-plan.md`) s tím, co se opravdu stalo, a zapíše `2026-W40-review.md`. Převezme poučení z W39 review. Pak sesbírá tasky, projekty, narozeniny a kalendář z demo MCP (zubař, Luciina vernisáž, pneumatiky, půlmaraton) a navrhne nejvýš 3 Big Rocks na volné večery.
 - **Zajímavost:** v sobotu 17. 10. je výměna pneumatik a zároveň výdej startovních balíčků na půlmaraton. Ukaž, jestli si toho všimne.
-- **Kam se podívat:** `Carpe Diem/2026/Weekly/` a alias `Aktualni plan`, který se přesune na nový plán.
+- **Kam se podívat:** `Denik/2026/Weekly/` a alias `Aktualni plan`, který se přesune na nový plán.
 - **Poznámka:** jednou za měsíc plán spouští i kontrolu termínů závodů (`zavody-terminy`), která potřebuje web. Offline ji skill přeskočí.
 
 ## 4. Zpracování závodu ⭐
@@ -67,5 +69,5 @@ Každý scénář jde pustit samostatně. Po vyzkoušení vrať vault do výchoz
 
 ## Vlastní nápady na experimenty
 - Napiš si vlastní denní poznámku na 1. 10. 2026 a nech ji zařadit do souhrnu.
-- Přidej do poznámky z minulého týdne odrážku, kterou souhrn nemá, a spusť souhrn znovu. `carpe_src` pozdní úpravu odhalí a skill ji doplní.
+- Přidej do poznámky z minulého týdne odrážku, kterou souhrn nemá, a spusť souhrn znovu. `denik_src` pozdní úpravu odhalí a skill ji doplní.
 - Napiš vlastní skill: třeba „co vařit tento týden“ podle receptů ve `Znalosti/Vareni`.

@@ -3,14 +3,14 @@
 Vault je uspořádaný podle **PARA** (Projects, Areas, Resources, Archive) a má k tomu několik speciálních složek.
 
 ```
-Carpe Diem/                 deník
+Denik/                 deník (viz Denik Denik)
   2025/2025-10/2025-10-01.md      denní poznámka (ploché odrážky)
   2025/2025-10/2025-10.md         měsíční souhrn
   2025/2025.md                    roční souhrn
-  2026/Weekly/2026-W37.md         týdenní souhrn (+ carpe_src hash)
+  2026/Weekly/2026-W37.md         týdenní souhrn (+ denik_src hash)
   2026/Weekly/2026-W40-plan.md    plán týdne (alias „Aktualni plan“)
   2026/Weekly/2026-W39-review.md  vyhodnocení týdne
-  Carpe Diem.md                   MOC – rozcestník (generuje build_moc.py)
+  Denik.md                   MOC – rozcestník (generuje build_moc.py)
 Projekty/                   aktivní projekty s cílem a koncem (JOpenSpace 2026, Rekonstrukce koupelny…)
 Oblasti/                    dlouhodobé oblasti
   Prace/  Lucie/  Rodina a Pratele/  Kondice a Zdravi/  Osobni rust/  Blog/
@@ -29,12 +29,14 @@ Workshop/                   tahle dokumentace
 CLAUDE.md                   konvence vaultu pro Claude Code
 ```
 
+Jak funguje deník: [[Jak funguje denik]].
+
 ## Kde co najdeš pro scénáře
 
 | Hledáš | Poznámka |
 | --- | --- |
 | Persona | [[Lide]] – Ondra, partnerka [[Lucie]], rodina v Hradci, kamarádi Radek, Hana a Filip, kočka [[Bublina]] |
-| Rok v kostce | [[Carpe Diem]] (MOC), [[2025]], měsíce [[2026-04]] (Lisabon a povýšení), [[2026-08]] (Dolomity) |
+| Rok v kostce | [[Denik]] (MOC), [[2025]], měsíce [[2026-04]] (Lisabon a povýšení), [[2026-08]] (Dolomity) |
 | Aktuální týden | [[2026-W40-plan]], [[2026-W39-review]] |
 | Závody | [[Sportovní akce]]; před závodem [[Oblasti/Kondice a Zdravi/Podzimni pulmaraton 2026\|Podzimni pulmaraton 2026]]; doběhnutý a nezpracovaný [[Brdska dvacitka 2026]]; zpracovaný [[Brdska dvacitka 2025]] |
 | Dárky | `Oblasti/Rodina a Pratele/Darky/`, `Napady na darky/` |

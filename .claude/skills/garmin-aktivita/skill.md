@@ -7,7 +7,7 @@ description: Stáhne data aktivity z Garmin Connect (vzdálenost, čas, tempo, t
 
 Integrace s Garmin Connect přes knihovnu `garminconnect` (neoficiální API). Skripty jsou vedle tohoto souboru; tokeny leží **mimo vault** v `~/.garminconnect`.
 
-> **Demo:** v demu běží nad fixtures v `demo_data/` (fiktivní aktivity 10/2025–9/2026, stejná data jako `carpe-summary/demo_data`; úseky po km mají závody a aktivity od 1. 9. 2026, GPX jen závody) a knihovnu `garminconnect` nepotřebuje. Skript to ohlásí řádkem `[demo]` na stderr. Pro reálná data složku `demo_data/` smaž, nainstaluj `pip install garminconnect` a jednou ručně spusť `garmin_login.py`.
+> **Demo:** v demu běží nad fixtures v `demo_data/` (fiktivní aktivity 10/2025–9/2026, stejná data jako `denik-souhrn/demo_data`; úseky po km mají závody a aktivity od 1. 9. 2026, GPX jen závody) a knihovnu `garminconnect` nepotřebuje. Skript to ohlásí řádkem `[demo]` na stderr. Pro reálná data složku `demo_data/` smaž, nainstaluj `pip install garminconnect` a jednou ručně spusť `garmin_login.py`.
 
 ## Skripty
 
@@ -27,7 +27,7 @@ Spouštění: `python ".claude/skills/garmin-aktivita/garmin_activity.py" 201045
 2. **Spusť** `garmin_activity.py <id>`. Pokud skript skončí hláškou „Nejsi přihlášen" / „Přihlášení z tokenů selhalo", požádej uživatele, aby ve svém terminálu spustil `garmin_login.py`, a počkej — **nikdy nechtěj heslo do chatu**.
 3. **Najdi cílovou poznámku**:
    - Závod / sportovní akce → `Oblasti/Kondice a Zdravi/<Název závodu YYYY>.md` (poznámky s tagem `zavod`; index je [[Sportovní akce]]). Blok vlož **za** sekci `## 📸 Fotografie a zážitky` a před `## 🔗 Odkazy` (pořadí sekcí po závodě viz skill `zpracovani-zavodu`); u poznámky ještě před závodem ho dej na konec. Do frontmatteru přidej `garmin: <url>`.
-   - Běžný trénink → denní poznámka `Carpe Diem/YYYY/YYYY-MM/YYYY-MM-DD.md`: **jen jeden bullet** ve stylu deníku (`- Beh 9 km za 45:31, tempo 5:03, tep 144`), žádný velký blok — denní poznámky jsou ploché seznamy.
+   - Běžný trénink → denní poznámka `Denik/YYYY/YYYY-MM/YYYY-MM-DD.md`: **jen jeden bullet** ve stylu deníku (`- Beh 9 km za 45:31, tempo 5:03, tep 144`), žádný velký blok — denní poznámky jsou ploché seznamy.
    - Pokud poznámka pro závod neexistuje, zeptej se, jestli ji založit (šablona = existující závodní poznámka, např. [[Brdska dvacitka 2025]]).
 4. **Vlož blok** tak, jak ho skript vypsal (jednotky a formát jsou už české). Nepřepisuj ručně čísla — když je něco divné (např. 0 km u překážkového závodu, kde hodinky pauzovaly), řekni to a nech surová data přes `--json`.
 5. **GPX** stahuj jen když o něj uživatel stojí; ukládej do `Oblasti/Kondice a Zdravi/Attachments/` a odkaž `[[garmin-<id>.gpx]]` z poznámky.

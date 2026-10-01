@@ -35,7 +35,7 @@ Spouštění z kořene vaultu: `python ".claude/skills/plausible-blog/plausible_
 | `breakdown source` | Rozpad podle dimenze. Aliasy: `source`, `referrer`, `channel`, `country`, `city`, `device`, `browser`, `os`, `entry`, `exit`, `utm_source`, `utm_medium`, `utm_campaign`, `goal`, `page`, nebo plný název `visit:…` / `event:…` |
 | `timeseries --period 12mo --interval month` | Vývoj návštěvnosti (`day` / `week` / `month`) |
 | `goals` | Goals a custom eventy (např. `Outbound Link: Click`, `Copy Code`, `404`) |
-| `summary START END` | Blok do Carpe Diem souhrnů (týden/měsíc/rok): zobrazení celkem + top 5 článků podle zobrazení. Volá ho `carpe-summary` (krok 2c) |
+| `summary START END` | Blok do souhrnů deníku (týden/měsíc/rok): zobrazení celkem + top 5 článků podle zobrazení. Volá ho `denik-souhrn` (krok 2c) |
 | `query '<json>'` | Libovolný dotaz Stats API v2 bez `site_id` (doplní se sám), pro nestandardní otázky |
 
 Společné volby: `--period`, `--from YYYY-MM-DD --to YYYY-MM-DD`, `--json` (surová odpověď), `--no-compare`.

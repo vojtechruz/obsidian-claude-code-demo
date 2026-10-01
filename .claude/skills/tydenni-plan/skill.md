@@ -1,6 +1,6 @@
 ---
 name: tydenni-plan
-description: Naplánuje uživateli příští (nebo aktuální) týden a zapíše plán jako samostatnou poznámku v Carpe Diem/YYYY/Weekly/YYYY-Www-plan.md; vyhodnocení minulého týdne zapíše zvlášť do YYYY-Www-review.md. Use when the user asks to plan the week, "naplánuj týden", "naplánuj mi příští týden", "týdenní plán", "plán na týden", "dashboard týdne", "weekly plan", "plan my week", nebo v neděli/pátek chce udělat týdenní review + plán. Sbírá tasky (TaskNotes), projekty, lidi (svátky/narozeniny), kalendář (MCP `demo-calendar`, jen čtení) a denní poznámky; vyhodnotí, jak se naplnil plán minulého týdne, a výsledek promítne do nového plánu (Big Rocks, kalendář Po–Ne, deadliny, Small Rocks, projekty). Po odsouhlasení zapíše naplánovaným taskům `scheduled:`.
+description: Naplánuje uživateli příští (nebo aktuální) týden a zapíše plán jako samostatnou poznámku v Denik/YYYY/Weekly/YYYY-Www-plan.md; vyhodnocení minulého týdne zapíše zvlášť do YYYY-Www-review.md. Use when the user asks to plan the week, "naplánuj týden", "naplánuj mi příští týden", "týdenní plán", "plán na týden", "dashboard týdne", "weekly plan", "plan my week", nebo v neděli/pátek chce udělat týdenní review + plán. Sbírá tasky (TaskNotes), projekty, lidi (svátky/narozeniny), kalendář (MCP `demo-calendar`, jen čtení) a denní poznámky; vyhodnotí, jak se naplnil plán minulého týdne, a výsledek promítne do nového plánu (Big Rocks, kalendář Po–Ne, deadliny, Small Rocks, projekty). Po odsouhlasení zapíše naplánovaným taskům `scheduled:`.
 ---
 
 # Týdenní plán
@@ -11,7 +11,7 @@ jsou záměrně: plán se otevírá denně a má být stručný; review se čte 
 jen report – jeho závěry (co se nestihlo, co se opakovaně odsouvá, kolik toho reálně zvládneš)
 se **promítnou do nového plánu**.
 
-Jazyk plánu: **čeština**. Styl: stručný, věcný, žádná omáčka (stejně jako `carpe-summary`).
+Jazyk plánu: **čeština**. Styl: stručný, věcný, žádná omáčka (stejně jako `denik-souhrn`).
 
 **Big Rocks / Small Rocks.** Tasky týdne se dělí na dva druhy a plán s nimi pracuje odlišně:
 - **Big Rocks** (max 3) – větší věci, které definují týden. Plánují se **první** a dostávají
@@ -28,9 +28,9 @@ Jazyk plánu: **čeština**. Styl: stručný, věcný, žádná omáčka (stejn�
 | `Tasks/*.md` (TaskNotes) | status, priority (`dnes`/`tyden`/`mesic`/`pozdeji`/`on-ice`), `due`, `scheduled`, `projects`, `completedDate` | skript |
 | `Projekty/<X>/<X>.md` | `due_date`, `status`, sekce `## Nejbližší kroky` | skript |
 | `Lide/*.md` | `svatek`, `narozeniny`, `vyroci_*` (formát `D. M.` nebo `YYYY-MM-DD`). Kdo má vyplněné `umrti` (příp. `zemrel`/`zemrela`), ten se přeskakuje celý. | skript |
-| `Carpe Diem/YYYY/YYYY-MM/YYYY-MM-DD.md` | denní poznámky minulého týdne (retrospektiva) | skript |
-| `Carpe Diem/YYYY/Weekly/YYYY-Www-plan.md` | předchozí plán – tasky z Top 3 a Kalendáře (co bylo naplánováno) | skript |
-| `Carpe Diem/YYYY/Weekly/YYYY-Www-review.md` | poslední vyhodnocení – `## Poučení` k přenesení | skript |
+| `Denik/YYYY/YYYY-MM/YYYY-MM-DD.md` | denní poznámky minulého týdne (retrospektiva) | skript |
+| `Denik/YYYY/Weekly/YYYY-Www-plan.md` | předchozí plán – tasky z Top 3 a Kalendáře (co bylo naplánováno) | skript |
+| `Denik/YYYY/Weekly/YYYY-Www-review.md` | poslední vyhodnocení – `## Poučení` k přenesení | skript |
 | Kalendář – MCP server `demo-calendar` (**jen čtení**) | události Po–Ne | `mcp__demo-calendar__list_events` |
 | `Oblasti/Kondice a Zdravi/Sportovní akce.md` | nadcházející závody + sekce „Pořadatelé“ (jen pro krok 2b) | ručně / skill `zavody-terminy` |
 
@@ -84,7 +84,7 @@ mají `start.date` (a `end.date` exkluzivně), časované `start.dateTime`.
      stále platí; co už neplatí, vynech.
    - Když předchozí plán neexistuje (první běh), udělej vyhodnocení jen z tasků a denních
      poznámek a poučení odvoď z toho, co propadlo.
-   - **Zapiš vyhodnocení jako samostatnou poznámku** `Carpe Diem/YYYY/Weekly/YYYY-Www-review.md`
+   - **Zapiš vyhodnocení jako samostatnou poznámku** `Denik/YYYY/Weekly/YYYY-Www-review.md`
      pro **minulý** týden (cesta je ve výstupu skriptu, šablona níže). Do plánu jde jen odkaz
      na ni. Když review už existuje, nepřepisuj ho bez dotazu. Zapiš ho hned (nečekej na
      odsouhlasení plánu) – je to záznam minulosti, ne návrh.
@@ -114,7 +114,7 @@ mají `start.date` (a `end.date` exkluzivně), časované `start.dateTime`.
 7. **Ukaž návrh uživateli a diskutuj** (v próze, ne formulářem): big rocks, rozložení do dnů,
    co navrhuješ odložit/zrušit, co urgovat u Waiting. Uprav podle odpovědi.
 
-8. **Zapiš plán** do `Carpe Diem/YYYY/Weekly/YYYY-Www-plan.md` (šablona níže). Cesta a odkazy
+8. **Zapiš plán** do `Denik/YYYY/Weekly/YYYY-Www-plan.md` (šablona níže). Cesta a odkazy
    pro nav jsou ve výstupu skriptu. Složka `Weekly/` už existuje. **Předchozí plán nikdy
    nepřepisuj** (kromě předání aliasu, viz níže) – vyhodnocení jde do review poznámky.
    Plán obsahuje **jen budoucnost**.
@@ -131,11 +131,11 @@ mají `start.date` (a `end.date` exkluzivně), časované `start.dateTime`.
    `status` ani `priority` (tohle uživatel řídí v TaskNotes). Skript nic nezapisuje – edituj
    soubory přímo.
 
-10. **Nabídni**, ne dělej: `carpe-summary` pro souhrn minulého týdne (pokud chybí), `navrh-darku`
+10. **Nabídni**, ne dělej: `denik-souhrn` pro souhrn minulého týdne (pokud chybí), `navrh-darku`
     pro blízké narozeniny/svátky, `process-inbox`, `zavody-terminy` (když krok 2b neběžel a
     uživatel se ptá na závody).
     Když se souhrn minulého týdne generuje v neděli jako součást plánování a uživatel pak do
-    nedělní denní poznámky ještě něco dopíše, nic se neztratí: `carpe-summary` má krok 1b
+    nedělní denní poznámky ještě něco dopíše, nic se neztratí: `denik-souhrn` má krok 1b
     (`check_late_edits.py`), který při příštím běhu pozdější změny denních poznámek odhalí a
     doplní. Není potřeba to řešit tady.
 
@@ -251,9 +251,9 @@ Pravidla pro poznámky:
   [[Task]]“), víc tasků = víc odrážek, v buňce tabulky odděluj tasky `<br>`. **Neopakuj za
   linkem due/scheduled** – widget je ukazuje sám.
 - Vynech prázdné podsekce (např. „Po termínu“, když nic není).
-- Soubory `*-plan.md` a `*-review.md` nesplňují vzory `verify_carpe.py` / `build_moc.py` /
-  `link_carpe.py`, takže do souhrnů a MOC nezasahují – **nepřidávej jim navigační blok se
-  šipkami** a nepouštěj na ně `link_carpe.py`.
+- Soubory `*-plan.md` a `*-review.md` nesplňují vzory `verify_denik.py` / `build_moc.py` /
+  `link_denik.py`, takže do souhrnů a MOC nezasahují – **nepřidávej jim navigační blok se
+  šipkami** a nepouštěj na ně `link_denik.py`.
 
 ## Co skill nedělá
 

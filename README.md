@@ -2,6 +2,8 @@
 
 Ukázkový Obsidian vault s **vymyšlenou personou** Ondrou Kratochvílem, Java vývojářem z Prahy. Strukturu, pluginy a Claude Code skills přebírá z reálného osobního vaultu. Obsah je celý fiktivní: lidé, firma, závody, deník, tasky, dárky, blog i statistiky. Jakákoli shoda se skutečností je náhodná.
 
+Jádrem je **deník** (složka `Denik/`): každý den pár odrážek, ze kterých AI skládá týdenní, měsíční a roční souhrny, a nad celým rokem se dá ptát „kdy jsem naposledy…“. Podrobněji v [Deník Denik](Workshop/Jak%20funguje%20denik.md).
+
 Externí služby (Garmin, Plausible, časomíra, Google Calendar) nahrazují lokální fixtures a demo MCP server, takže si vault můžeš naklonovat a zkoušet bez jakýchkoli účtů.
 
 ## Rychlý start
@@ -37,7 +39,8 @@ Je ve složce [`Workshop/`](Workshop/Workshop.md) a dá se číst i přímo v Ob
 
 | Soubor | Obsah |
 | --- | --- |
-| [Mapa vaultu](Workshop/Mapa%20vaultu.md) | struktura složek (PARA, Carpe Diem…), kde co najdeš, konvence |
+| [Jak funguje deník](Workshop/Jak%20funguje%20denik.md) | k čemu deník je, tři vrstvy (den → týden → měsíc → rok), plán a review týdne, skripty |
+| [Mapa vaultu](Workshop/Mapa%20vaultu.md) | struktura složek (PARA, deník…), kde co najdeš, konvence |
 | [Pluginy](Workshop/Pluginy.md) | co dělají TaskNotes, Bases, Templater, QuickAdd, Spaced Repetition… a kde je uvidíš |
 | [Skills](Workshop/Skills.md) | 13 skills: co dělají, jak je spustit, co čtou a píšou, jak spolupracují |
 | [Scénáře](Workshop/Scenare.md) | prompty k vyzkoušení krok za krokem a co sledovat |

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """
 Collect everything needed to plan a week from the vault (Tasks/, Projekty/, Lide/,
-Carpe Diem/, previous weekly plan). Prints a Markdown report to stdout.
+Denik/, previous weekly plan). Prints a Markdown report to stdout.
 
 Usage:
   python .claude/skills/tydenni-plan/collect.py            # auto: next ISO week if today is Fri-Sun, else current
@@ -69,7 +69,7 @@ VAULT = Path(__file__).resolve().parents[3]
 TASKS = VAULT / "Tasks"
 PROJEKTY = VAULT / "Projekty"
 LIDE = VAULT / "Lide"
-CARPE = VAULT / "Carpe Diem"
+CARPE = VAULT / "Denik"
 
 DONE = {"Done"}
 STALE_DAYS = 30

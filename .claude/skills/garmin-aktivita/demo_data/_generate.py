@@ -1,9 +1,9 @@
 """Generator fiktivnich Garmin fixtures pro demo vault (deterministicky). Spust: python _generate.py
 
-Seznam aktivit (ID, souhrnna cisla) se kopiruje z carpe-summary/demo_data/activities.json; tady se k zavodum
+Seznam aktivit (ID, souhrnna cisla) se kopiruje z denik-souhrn/demo_data/activities.json; tady se k zavodum
 a aktivitam od 1. 9. 2026 dopocitaji detaily (summaryDTO), useky po km a male fiktivni GPX u zavodu.
 Soubory zavodu (activity-/splits-/garmin-<id>) se pri opakovanem spusteni neprepisuji - z jejich cisel
-vychazeji race notes. Poradi: nejdriv carpe-summary/demo_data/_generate.py, pak tento skript.
+vychazeji race notes. Poradi: nejdriv denik-souhrn/demo_data/_generate.py, pak tento skript.
 """
 import json
 import math
@@ -135,8 +135,8 @@ def gpx(aid, name, start, laps, center):
             f"  <trk>\n    <name>{name}</name>\n    <trkseg>\n" + "\n".join(pts) + "\n    </trkseg>\n  </trk>\n</gpx>\n")
 
 
-# --- listing = kopie carpe-summary/demo_data/activities.json (jediny zdroj pravdy pro ID a souhrnna cisla) ---
-SRC = OUT.parents[1] / "carpe-summary" / "demo_data" / "activities.json"
+# --- listing = kopie denik-souhrn/demo_data/activities.json (jediny zdroj pravdy pro ID a souhrnna cisla) ---
+SRC = OUT.parents[1] / "denik-souhrn" / "demo_data" / "activities.json"
 listing = json.loads(SRC.read_text(encoding="utf-8"))
 RACE_IDS = {"18412337051", "19287415560", "19468803217", "20104559832"}  # detaily zavodu jsou zamrazene (cisla v race notes)
 for f in OUT.glob("*"):

@@ -424,7 +424,7 @@ def cmd_goals(args):
 
 
 def cmd_summary(args):
-    """Blok pro Carpe Diem souhrny: celkova zobrazeni webu + top N clanku podle zobrazeni."""
+    """Blok pro Denik souhrny: celkova zobrazeni webu + top N clanku podle zobrazeni."""
     dr = [args.start, args.end]
     total = run_query({"metrics": ["pageviews"], "date_range": dr})
     total_pv = total["results"][0]["metrics"][0] if total.get("results") else 0
@@ -510,7 +510,7 @@ def main():
     sp.add_argument("--limit", type=int, default=20)
     sp.set_defaults(func=cmd_goals)
 
-    sp = sub.add_parser("summary", help="blok do Carpe Diem souhrnu: zobrazeni celkem + top clanky")
+    sp = sub.add_parser("summary", help="blok do Denik souhrnu: zobrazeni celkem + top clanky")
     sp.add_argument("start", help="YYYY-MM-DD")
     sp.add_argument("end", help="YYYY-MM-DD (vcetne)")
     sp.add_argument("--top", type=int, default=5)
