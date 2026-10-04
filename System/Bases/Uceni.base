@@ -1,0 +1,110 @@
+filters:
+  and:
+    - or:
+        - file.inFolder("Oblasti/Osobni rust/Temata")
+        - and:
+            - file.inFolder("Znalosti")
+            - '!dokonceno.isEmpty()'
+    - file.ext == "md"
+properties:
+  file.name:
+    displayName: Tema
+  note.priorita:
+    displayName: Priorita
+  note.kategorie:
+    displayName: Kategorie
+  note.zdroje:
+    displayName: Zdroje
+  note.cil:
+    displayName: Cil
+  note.zacato:
+    displayName: Zacato
+  note.dokonceno:
+    displayName: Dokonceno
+  note.odlozeno:
+    displayName: Odlozeno
+  note.v_praci:
+    displayName: V praci
+  note.blog:
+    displayName: Blog
+views:
+  - type: table
+    name: Rozpracovano
+    filters:
+      and:
+        - file.inFolder("Oblasti/Osobni rust/Temata")
+        - '!zacato.isEmpty()'
+        - dokonceno.isEmpty()
+    order:
+      - file.name
+      - note.kategorie
+      - note.cil
+      - note.zdroje
+      - note.zacato
+  - type: table
+    name: Fronta
+    filters:
+      and:
+        - file.inFolder("Oblasti/Osobni rust/Temata")
+        - zacato.isEmpty()
+        - odlozeno.isEmpty()
+    order:
+      - file.name
+      - note.priorita
+      - note.kategorie
+      - note.zdroje
+      - note.v_praci
+      - note.blog
+    sort:
+      - property: note.priorita
+        direction: DESC
+      - property: note.kategorie
+        direction: ASC
+  - type: table
+    name: Podle kategorie
+    groupBy:
+      property: note.kategorie
+      direction: ASC
+    order:
+      - file.name
+      - note.priorita
+      - note.zacato
+      - note.dokonceno
+      - note.zdroje
+    sort:
+      - property: note.priorita
+        direction: DESC
+  - type: table
+    name: V praci
+    filters:
+      and:
+        - v_praci == true
+    order:
+      - file.name
+      - note.priorita
+      - note.kategorie
+      - note.zacato
+  - type: table
+    name: Hotovo
+    filters:
+      and:
+        - file.inFolder("Znalosti")
+        - '!dokonceno.isEmpty()'
+    order:
+      - file.name
+      - note.kategorie
+      - note.dokonceno
+      - note.zdroje
+    sort:
+      - property: note.dokonceno
+        direction: DESC
+  - type: table
+    name: Odlozeno
+    filters:
+      and:
+        - '!odlozeno.isEmpty()'
+    order:
+      - file.name
+      - note.kategorie
+      - note.priorita
+      - note.odlozeno

@@ -8,7 +8,7 @@ single new blog post idea:
 
   * existing articles  -> Oblasti/Blog/Blog Articles/*.md   (overlap, series fit)
   * existing ideas     -> Oblasti/Blog/Blog Ideas/*.md      (duplicate detection)
-  * learning list      -> Oblasti/Osobni rust/Learning Tracker/*.md (learning alignment, optional)
+  * learning list      -> Oblasti/Osobni rust/Temata/*.md (open learning topics, learning alignment, optional)
   * tag vocabulary     -> tags actually used in the two databases
 
 Usage:
@@ -35,7 +35,7 @@ VAULT = Path(os.environ.get("OBSIDIAN_VAULT") or Path(__file__).resolve().parent
 BLOG_DIR = VAULT / "Oblasti" / "Blog"
 IDEAS_DIR = BLOG_DIR / "Blog Ideas"
 ARTICLES_DIR = BLOG_DIR / "Blog Articles"
-LEARNING_DIR = VAULT / "Oblasti" / "Osobni rust" / "Learning Tracker"
+LEARNING_DIR = VAULT / "Oblasti" / "Osobni rust" / "Temata"  # open learning topics; state derived from zacato/odlozeno/dokonceno
 
 IDEA_CALLOUT = "AI Feedback"
 
@@ -251,13 +251,12 @@ def main():
         "learning_items": [
             {
                 "title": n["title"],
-                "priority": n["fm"].get("Priority") or "",
-                "status": n["fm"].get("status") or n["fm"].get("Status") or "",
-                "tags": as_list(n["fm"].get("Tags")),
+                "priority": n["fm"].get("priorita") or "",
+                "status": "rozpracovano" if n["fm"].get("zacato") else "chci",
+                "tags": [t for t in (n["fm"].get("kategorie"),) if t],
             }
             for n in learning
-            if str(n["fm"].get("Category", "")) == "Development"
-            and str(n["fm"].get("status") or n["fm"].get("Status") or "") != "Done"
+            if not n["fm"].get("odlozeno") and not n["fm"].get("dokonceno")
         ],
         "articles": [article_row(n) for n in articles],
     }

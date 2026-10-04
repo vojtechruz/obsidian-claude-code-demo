@@ -1,0 +1,80 @@
+filters:
+  and:
+    - file.inFolder("Oblasti/Osobni rust/Zdroje")
+    - file.ext == "md"
+properties:
+  file.name:
+    displayName: Zdroj
+  file.backlinks:
+    displayName: Temata
+  note.typ:
+    displayName: Typ
+  note.platforma:
+    displayName: Platforma
+  note.priorita:
+    displayName: Priorita
+  note.koupeno:
+    displayName: Koupeno
+  note.zacato:
+    displayName: Zacato
+  note.dokonceno:
+    displayName: Dokonceno
+  note.url:
+    displayName: URL
+  note.plati_do:
+    displayName: Plati do
+views:
+  - type: table
+    name: Vse
+    groupBy:
+      property: note.typ
+      direction: ASC
+    order:
+      - file.name
+      - note.priorita
+      - note.platforma
+      - note.koupeno
+      - note.zacato
+      - note.dokonceno
+      - file.backlinks
+    sort:
+      - property: note.priorita
+        direction: DESC
+  - type: table
+    name: Rozpracovano
+    filters:
+      and:
+        - '!zacato.isEmpty()'
+        - dokonceno.isEmpty()
+    order:
+      - file.name
+      - note.typ
+      - note.platforma
+      - note.zacato
+      - file.backlinks
+  - type: table
+    name: Koupeno nevyuzito
+    filters:
+      and:
+        - koupeno == "ano"
+        - zacato.isEmpty()
+    order:
+      - file.name
+      - note.typ
+      - note.platforma
+      - note.priorita
+      - note.plati_do
+      - file.backlinks
+    sort:
+      - property: note.priorita
+        direction: DESC
+  - type: table
+    name: Hotovo
+    filters:
+      and:
+        - '!dokonceno.isEmpty()'
+    order:
+      - file.name
+      - note.typ
+      - note.dokonceno
+      - file.backlinks

@@ -13,7 +13,7 @@ Claude Code skills žijí v `.claude/skills/<jméno>/`. Každý skill tvoří so
 | `garmin-aktivita` | Data aktivity z Garminu: tempo, tep, převýšení, úseky po km. | „Poslední aktivity z Garminu“ | Garmin (fixtures) | blok Garmin | ne |
 | `zavody-terminy` | Zkontroluje weby pořadatelů, najde nově vypsané termíny a kolize s kalendářem. | „Jsou už vypsané závody na jaro?“ | weby pořadatelů, `Sportovní akce`, kalendář | nic, zápis do indexu na požádání | **ano** |
 | `plausible-blog` | Návštěvnost blogu: nejčtenější články, zdroje, vývoj v čase. Stránky mapuje na poznámky článků. | „Jak si vede blog za září?“ | Plausible (fixtures), `Blog Articles/` | nic | ne |
-| `blog-idea` | Zapíše nápad na článek a hned na něj udělá AI review: duplicity, série, priorita, náročnost. | „Přidej blog ideu: Testcontainers v CI pipeline“ | `Blog Ideas/`, `Blog Articles/`, Learning Tracker | novou poznámku nápadu | ne |
+| `blog-idea` | Zapíše nápad na článek a hned na něj udělá AI review: duplicity, série, priorita, náročnost. | „Přidej blog ideu: Testcontainers v CI pipeline“ | `Blog Ideas/`, `Blog Articles/`, témata v `Osobni rust/Temata/` | novou poznámku nápadu | ne |
 | `java-features` | Po vydání Javy stáhne JEPy, roztřídí je do témat a ukáže zastaralé články. | „Vyšla Java 25, projdi JEPy“ | openjdk.org, `Java features/` | témata, ignore list, MOC | **ano** |
 | `process-inbox` | Roztřídí `__INBOX`: podcasty, duplicity, články a videa. U položek, které něco vyžadují, navrhne další krok. | „Zpracuj inbox“ | `__INBOX/` | přesuny, mazání duplicit, nové tasky a nápady (po schválení) | ne |
 | `verifikace-vaultu` | Rozbité odkazy, osiřelé přílohy, integrita deníku. | „Zkontroluj vault“ | celý vault | nic | ne |

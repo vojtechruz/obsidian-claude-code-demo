@@ -19,7 +19,7 @@ Oblasti/Blog/Blog Ideas/                 1 note = 1 idea (database view: Blog Id
 Oblasti/Blog/Blog Ideas/Attachments/     images belonging to idea notes
 Oblasti/Blog/Blog Articles/              1 note = 1 published article (context for the review)
 Oblasti/Blog/Java features/              Java feature topics (JEP chains) — see the `java-features` skill
-Oblasti/Osobni rust/Learning Tracker/    learning list (learning alignment signal, optional)
+Oblasti/Osobni rust/Temata/              open learning topics (learning alignment signal, optional)
 ```
 
 ### Blog Ideas — note format
@@ -96,11 +96,12 @@ Views 6mo: 840
 
 `Series`, `Excerpt` and `Views 6mo` are optional (`Views 6mo` is used by `java-features`).
 
-### Learning Tracker (optional)
+### Learning topics (optional)
 
-`Oblasti/Osobni rust/Learning Tracker/*.md`, one note per thing to learn, frontmatter
-`Category` (only `Development` items are used), `Priority`, `status` (`Done` items are skipped)
-and `Tags`. If the folder does not exist, learning alignment is just `none`.
+`Oblasti/Osobni rust/Temata/*.md`, one note per topic the user wants to learn (see
+`Oblasti/Osobni rust/Uceni.md`). Frontmatter `priorita`, `kategorie`, `zacato`, `odlozeno`;
+there is no `stav` property — a topic is open unless it has `odlozeno` or `dokonceno`, and
+"in progress" when it has `zacato`. If the folder does not exist, learning alignment is just `none`.
 
 **Blog content is in English** — the note body and the whole review are written in English
 even when the user asks in Czech. Reply to the user in the language they used.

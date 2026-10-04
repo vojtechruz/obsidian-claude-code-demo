@@ -15,7 +15,8 @@ Projekty/                   aktivní projekty s cílem a koncem (JOpenSpace 2026
 Oblasti/                    dlouhodobé oblasti
   Prace/  Lucie/  Rodina a Pratele/  Kondice a Zdravi/  Osobni rust/  Blog/
   IT Komunita/  Cestovani/  Domov/  Administrativa/  Finance/  Radost/  Vzpominky/
-Znalosti/                   referenční materiál (Kubernetes, Vareni, Lezeni)
+  Osobni rust/Uceni.md       learning tracker (hub s pohledy), Temata/ (fronta a rozpracované), Zdroje/ (kurzy, platformy)
+Znalosti/                   referenční materiál – jen nabyté znalosti (Kubernetes, Vareni, Lezeni, Prednaseni)
 Archiv/                     hotové projekty a archivované tasky
 Lide/                       jedna poznámka na člověka (narozeniny, svátky, info k dárkům)
 Tasks/                      TaskNotes tasky
@@ -41,6 +42,7 @@ Jak funguje deník: [[Jak funguje denik]].
 | Závody | [[Sportovní akce]]; před závodem [[Oblasti/Kondice a Zdravi/Podzimni pulmaraton 2026\|Podzimni pulmaraton 2026]]; doběhnutý a nezpracovaný [[Brdska dvacitka 2026]]; zpracovaný [[Brdska dvacitka 2025]] |
 | Dárky | `Oblasti/Rodina a Pratele/Darky/`, `Napady na darky/` |
 | Blog | `Oblasti/Blog/Blog Articles/`, `Blog Ideas/`, [[Java features]] |
+| Učení | [[Uceni]] (fronta, rozpracované, zdroje); rozpracovaná témata [[Spring AI]] a [[Anglictina - mluveni]], odložené [[Kubernetes - networking a Helm]], hotové [[Prednaseni - prace s publikem]] ve `Znalosti/` |
 | Tasky | `Tasks/`. Pohledy otevřeš z příkazového panelu přes „TaskNotes“ |
 
 ## Konvence

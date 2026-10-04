@@ -67,6 +67,13 @@ Jak deník funguje, vysvětluje [[Jak funguje denik]].
 - `Zkontroluj vault` – `verifikace-vaultu`. Očekávané nálezy jsou odkazy na souhrny, které ještě neexistují (`2026-W38`, `2026-09`, `2026`). Ty vzniknou ve scénáři 1.
 - `Jsou už vypsané závody na jaro?` – `zavody-terminy`. Čte skutečné weby pořadatelů, takže potřebuje síť.
 
+## 9. Učení
+Learning tracker nemá vlastní skill, řídí se konvencemi v `CLAUDE.md` a pohledy v [[Uceni]]. Stav tématu se neukládá, odvozuje se ze složky a dat `zacato` / `odlozeno` / `dokonceno`.
+- `Co se teď učím a co mám ve frontě?` – Claude přečte `Oblasti/Osobni rust/Temata/`, rozliší rozpracované (mají `zacato`), odložené a frontu a připomene WIP limit 2 (rozpracované jsou už dvě: Spring AI a Anglictina).
+- `Chci se začít učit Kafka exactly-once` – podle postupu v [[Uceni]] má Claude ohlídat WIP limit, doplnit `zacato` a `cil`, navrhnout zdroje a napsat Big Rock do týdenního plánu.
+- `Dokončil jsem Spring AI, uzavři to` – Claude doplní `dokonceno`, zeptá se na revizi výpisků a přesune poznámku do `Znalosti/Spring/`; blog idea [[Spring AI - prvni kroky s RAG]] zůstane propojená.
+- `Vyplatí se mi obnovit předplatné kurzy.example?` – pohled „Koupeno nevyužito“ v [[Uceni]] a task [[Rozhodnout o obnove predplatneho kurzy.example]].
+
 ## Vlastní nápady na experimenty
 - Napiš si vlastní denní poznámku na 1. 10. 2026 a nech ji zařadit do souhrnu.
 - Přidej do poznámky z minulého týdne odrážku, kterou souhrn nemá, a spusť souhrn znovu. `denik_src` pozdní úpravu odhalí a skill ji doplní.

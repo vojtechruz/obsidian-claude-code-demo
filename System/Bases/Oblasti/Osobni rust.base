@@ -48,6 +48,8 @@ views:
         - file.inFolder("Oblasti/Osobni rust")
         - file.ext == "md"
         - file.name != "Osobni rust"
+        - '!file.inFolder("Oblasti/Osobni rust/Temata")'
+        - '!file.inFolder("Oblasti/Osobni rust/Zdroje")'
     order:
       - file.mtime
       - file.name

@@ -11,6 +11,8 @@ status: Active
 ## Quick Info
 Kurzy, knihy, anglictina, prednaseni.
 
+- [[Uceni]] - learning tracker: fronta temat, rozpracovane, zdroje (`Temata/`, `Zdroje/`); hotove znalosti jdou do `Znalosti/`
+
 ---
 
 ## Projekty
